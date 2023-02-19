@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    let workoutController = WorkoutController()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        WorkoutView(controller: workoutController )
     }
 }
 
